@@ -1,0 +1,206 @@
+{% extends 'common_code/base.html' %}
+{% load static %}
+{% block title %} Women Collection {% endblock %}
+
+{% block main-content %}
+<div class="colorlib-loader"></div>
+
+<div id="page">
+	
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p class="bread"><span><a href="index.html">Home</a></span> / <span>Women</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="breadcrumbs-two">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="breadcrumbs-img" style="background-image: url('{% static 'images/cover-img-1.jpg' %}')">
+						<h2>Women's</h2>
+					</div>
+					<div class="menu text-center">
+						<p><a href="#">New Arrivals</a> <a href="#">Best Sellers</a> <a href="#">Extended Widths</a> <a href="#">Sale</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="colorlib-featured">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<div class="featured">
+						<div class="featured-img featured-img-2" style="background-image: url('{% static 'images/img_bg_2.jpg' %}')">
+							<h2>Casuals</h2>
+							<p><a href="#" class="btn btn-primary btn-lg">Shop now</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="featured">
+						<div class="featured-img featured-img-2" style="background-image: url('{% static 'images/women.jpg' %}')">
+							<h2>Dress</h2>
+							<p><a href="#" class="btn btn-primary btn-lg">Shop now</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 text-center">
+					<div class="featured">
+						<div class="featured-img featured-img-2" style="background-image: url('{% static 'images/item-11.jpg' %}')">
+							<h2>Sports</h2>
+							<p><a href="#" class="btn btn-primary btn-lg">Shop now</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="colorlib-product">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-xl-3">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="side border mb-1">
+								<h3>Brand</h3>
+								<ul>
+									<li><a href="{% url 'womenproduct' 'Nike' %}">Nike</a></li>
+									<li><a href="{% url 'womenproduct' 'Adidas' %}">Adidas</a></li>
+									<li><a href="{% url 'womenproduct' 'Merrel' %}">Merrel</a></li>
+									<li><a href="{% url 'womenproduct' 'Gucci' %}">Gucci</a></li>
+									<li><a href="{% url 'womenproduct' 'Skechers' %}">Skechers</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="side border mb-1">
+								<h3>Size/Width</h3>
+								<div class="block-26 mb-2">
+									<h4>Size</h4>
+								<ul>
+									<li><a href="{% url 'womenproduct' '7' %}">7</a></li>
+									<li><a href="{% url 'womenproduct' '7' %}">7.5</a></li>
+									<li><a href="{% url 'womenproduct' '8' %}">8</a></li>
+									<li><a href="{% url 'womenproduct' '8' %}">8.5</a></li>
+									<li><a href="{% url 'womenproduct' '9' %}">9</a></li>
+									<li><a href="{% url 'womenproduct' '9' %}">9.5</a></li>
+									<li><a href="{% url 'womenproduct' '10' %}">10</a></li>
+									<li><a href="{% url 'womenproduct' '10' %}">10.5</a></li>
+									<li><a href="{% url 'womenproduct' '11' %}">11</a></li>
+									<li><a href="{% url 'womenproduct' '11' %}">11.5</a></li>
+									<li><a href="{% url 'womenproduct' '12' %}">12</a></li>
+									<li><a href="{% url 'womenproduct' '12' %}">12.5</a></li>
+									<li><a href="{% url 'womenproduct' '13' %}">13</a></li>
+									<li><a href="{% url 'womenproduct' '13' %}">13.5</a></li>
+									<li><a href="{% url 'womenproduct' '14' %}">14</a></li>
+								</ul>
+							</div>
+							<div class="block-26">
+									<h4>Width</h4>
+								<ul>
+									<li><a href="{% url 'womenproduct' 'M' %}">M</a></li>
+									<li><a href="{% url 'womenproduct' 'W' %}">W</a></li>
+								</ul>
+							</div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="side border mb-1">
+								<h3>Style</h3>
+								<ul>
+									<li><a href="{% url 'womenproduct' 'Slip_Ons' %}">Slip Ons</a></li>
+									<li><a href="{% url 'womenproduct' 'Boots' %}">Boots</a></li>
+									<li><a href="{% url 'womenproduct' 'Sandals' %}">Sandals</a></li>
+									<li><a href="{% url 'womenproduct' 'Lace_Ups' %}">Lace Ups</a></li>
+									<li><a href="{% url 'womenproduct' 'Oxfords' %}">Oxfords</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="side border mb-1">
+								<h3>Colors</h3>
+								<ul>
+									<li><a href="{% url 'womenproduct' 'Black' %}">Black</a></li>
+									<li><a href="{% url 'womenproduct' 'White' %}">White</a></li>
+									<li><a href="{% url 'womenproduct' 'Blue' %}">Blue</a></li>
+									<li><a href="{% url 'womenproduct' 'Red' %}">Red</a></li>
+									<li><a href="{% url 'womenproduct' 'Green' %}">Green</a></li>
+									<li><a href="{% url 'womenproduct' 'Grey' %}">Grey</a></li>
+									<li><a href="{% url 'womenproduct' 'Orange' %}">Orange</a></li>
+									<li><a href="{% url 'womenproduct' 'Cream' %}">Cream</a></li>
+									<li><a href="{% url 'womenproduct' 'Brown' %}">Brown</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="side border mb-1">
+								<h3>Material</h3>
+								<ul>
+									<li><a href="{% url 'womenproduct' 'Leather' %}">Leather</a></li>
+									<li><a href="{% url 'womenproduct' 'Suede' %}">Suede</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="side border mb-1">
+								<h3>Technologies</h3>
+								<ul>
+									<li><a href="{% url 'womenproduct' 'BioBevel' %}">BioBevel</a></li>
+									<li><a href="{% url 'womenproduct' 'Groove' %}">Groove</a></li>
+									<li><a href="{% url 'womenproduct' 'FlexBevel' %}">FlexBevel</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-9 col-xl-9">
+					<div class="row row-pb-md">
+						{% for product in women_shoes %}
+						<div class="col-lg-4 mb-4 text-center">
+							<div class="product-entry border">
+								<a href="{% url 'productdetails' product.id %}" class="prod-img">
+									<img src="{{product.product_image.url}}" class="img-fluid" alt="Free html5 bootstrap 4 template">
+								</a>
+								<div class="desc">
+									<h2><a href="{% url 'productdetails' product.id %}">{{product.title}}</a></h2>
+									<span class="price">{{product.discounted_price}}</span>
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+						
+					</div>
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<div class="block-27">
+							<ul>
+								<li><a href="#"><i class="ion-ios-arrow-back"></i></a></li>
+								<li class="active"><span>1</span></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#"><i class="ion-ios-arrow-forward"></i></a></li>
+							</ul>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+</div>
+
+
+{% endblock main-content %}		

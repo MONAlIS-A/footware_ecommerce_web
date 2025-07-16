@@ -1,0 +1,143 @@
+
+{% extends 'common_code/base.html' %}
+{% load static %}
+{% block title %} checkout {% endblock %}
+	
+{% block main-content %}		
+<div class="colorlib-loader"></div>
+
+<div id="page">
+	
+
+	<div class="breadcrumbs">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<p class="bread"><span><a href="{% url 'home' %}">Home</a></span> / <span>Checkout</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    
+	<div class="colorlib-product">
+		<div class="container">
+			<div class="row row-pb-lg">
+				<div class="col-sm-10 offset-md-1">
+					<div class="process-wrap">
+						<div class="process text-center active">
+							<p><span>01</span></p>
+							<h3>Shopping Cart</h3>
+						</div>
+						<div class="process text-center active">
+							<p><span>02</span></p>
+							<h3>Checkout</h3>
+						</div>
+						<div class="process text-center">
+							<p><span>03</span></p>
+							<h3>Order Complete</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4>Select Shipping Address</h4>
+			<div class="row">
+								
+				<div class="col-lg-8">
+										
+					<form action="/paymentdone" class="colorlib-form">
+					{% for ad in add %}											
+						<div class="card">
+							<div class="col-md-12">
+								<div class="form-group">
+								<h5>{{ad.name}}</h5>
+								<p>{{ad.division}}, {{ad.district}}, {{ad.thana}}, {{ad.villorroad}}, {{ad.zipcode}}</p>								
+								</div>
+							</div>
+						</div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<div class="radio">
+									<label><input type="radio" name="custid" id="custadd{{forloop.counter}}" value="{{ad.id}}"> Address: {{forloop.counter}} </label>								
+								</div>
+							</div>											
+						</div>
+						{% endfor %}
+						<div class="text-end">
+							<button type="submit" class="btn btn-warning mt-3 px-5 fw-bold">Continue</button>
+						</div>
+						{% if messages %}
+						{% for message in messages %}
+							<div style="color: red; font-weight: bold; margin-top: 10px;">{{ message }}</div>
+						{% endfor %}
+						{% endif %}
+
+					</form>										
+				</div>
+				<div class="col-lg-4">
+					<h2>Cart Total</h2>
+					<div class="row">
+						{% for item in cart_items %}
+						<div class="col-md-12">
+							<div class="cart-detail">								
+								<ul>
+									<li>
+										<span>Subtotal</span> 
+										<ul>
+											<li><span>{{item.product.title}}</span> <span>{{item.total_cost}}</span></li>											
+										</ul>
+									</li>
+									<li><span>Shipping</span> <span>{{shipping_amount}}</span></li>
+									<li><span>Order Total</span> <span>{{totalamount}}</span></li>
+								</ul>
+							</div>
+						</div>
+						{% endfor %}
+
+						<div class="w-100"></div>
+
+				<!--<div class="col-md-12">
+							<div class="cart-detail">
+								<h2>Payment Method</h2>
+								<div class="form-group">
+									<div class="col-md-12">
+										<div class="radio">
+											<label><input type="radio" name="optradio"> Direct Bank Tranfer</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-12">
+										<div class="radio">
+											<label><input type="radio" name="optradio"> Check Payment</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-12">
+										<div class="radio">
+											<label><input type="radio" name="optradio"> Paypal</label>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-12">
+										<div class="checkbox">
+											<label><input type="checkbox" value=""> I have read and accept the terms and conditions</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+</div>
+{% endblock main-content %}
+
+	
