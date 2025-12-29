@@ -2,12 +2,6 @@
 
 A modern, responsive e-commerce website for a footwear brand. This project showcases a clean UI, dynamic product listings, and promotional banners designed to boost user engagement and sales.
 
-## 🖼️ Screenshot
-
-![Website Screenshot](C:\Users\UseR\Pictures\footware.png)
-
-> *Above: Homepage featuring a 50% summer sale banner and product showcase.*
-
 ## 🚀 Features
 
 - Stylish homepage with promotional banners
@@ -27,3 +21,9 @@ A modern, responsive e-commerce website for a footwear brand. This project showc
    ```bash
    git clone https://github.com/MONAlIS-A/footware_ecommerce_web.git
    cd footware_ecommerce_web
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+3. Run the server
+   ```bash
+   python manage.py runserver
