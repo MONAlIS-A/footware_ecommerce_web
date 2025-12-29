@@ -1,6 +1,7 @@
 # Footwear Store 🥿👞
 
 A modern, responsive e-commerce website for a footwear brand. This project showcases a clean UI, dynamic product listings, and promotional banners designed to boost user engagement and sales.
+## 🖼️ Screenshot ![Website Screenshot](./footware.png)
 
 ## 🚀 Features
 
