@@ -4,7 +4,7 @@ A modern, responsive e-commerce website for a footwear brand. This project showc
 
 ## 🖼️ Screenshot
 
-![Website Screenshot](./footware.png)
+![Website Screenshot](C:\Users\UseR\Pictures\footware.png)
 
 > *Above: Homepage featuring a 50% summer sale banner and product showcase.*
 
