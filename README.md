@@ -25,5 +25,5 @@ A modern, responsive e-commerce website for a footwear brand. This project showc
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/footwear-store.git
-   cd footwear-store
+   git clone https://github.com/MONAlIS-A/footware_ecommerce_web.git
+   cd footware_ecommerce_web
